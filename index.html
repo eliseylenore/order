@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <meta charset="utf-8">
+    <title>Book Appointment</title>
+  </head>
+  <body class="container">
+    <div class="blanks">
+      <form id="information">
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <select class="form-control" id="shirts">
+            <option><span class="shirtName">turtleneck</span> <span class="shirtPrice">$20</span></option>
+            <option>tank top $20</option>
+            <option>peasant top $20</option>
+            <option>spaghetti strap $20</option>
+          </select>
+        </div><!--end name-->
+
+      <button class="btn" type="submit">Confirm</button>
+
+      </form><!--end information-->
+
+    </div><!--end blanks-->
+
+    <div id="confirmation">
+      <p>
+        <span class="name"></span>, thanks for purchasing our <span id="shirtName"></span>! Here is your receipt: <span id="shirtPrice"></span>
+      </p>
+    </div>
+
+  </body>
+</html>
